@@ -18,7 +18,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE    := ti8x
 LOCAL_SRC_FILES := ti8x.c TI85.c Z80/Z80.c
-LOCAL_LDLIBS    := -llog -ljnigraphics
+LOCAL_LDLIBS    := -llog -ljnigraphics -laaudio
 
 ifeq ($(TARGET_ARCH_ABI),x86)
     LOCAL_CFLAGS += -ffast-math -mtune=atom -mssse3 -mfpmath=sse
